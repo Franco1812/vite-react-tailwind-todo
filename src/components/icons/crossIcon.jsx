@@ -11,4 +11,4 @@ const CrossIcon = () => {
         </svg>
     );
 };
-export default CrossIcon
+export default CrossIcon;
