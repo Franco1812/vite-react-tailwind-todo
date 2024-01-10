@@ -1,7 +1,7 @@
-const CheckIcon = () => {
+const CheckIcon = ({...props}) => {
     return(
         <svg xmlns="http://www.w3.org/2000/svg" 
-        
+            {...props}
             width="11" 
             height="9"
             fill="none" 
