@@ -62,7 +62,7 @@ const filteredTodos =() => {
 
 
   return (
-    <div className="bg-[url('./assets/images/bg-mobile-light.jpg')] bg-no-repeat bg-contain bg-gray-300 min-h-screen">
+    <div className="bg-[url('./assets/images/bg-mobile-light.jpg')] bg-no-repeat bg-contain bg-gray-300 min-h-screen dark:bg-gray-900 dark:bg-[url('./assets/images/bg-mobile-dark.jpg')]">
       <Header />
       <main className="container mx-auto px-4 mt-8" >
         <TodoCreate todoCreate={todoCreate} />
@@ -74,7 +74,7 @@ const filteredTodos =() => {
         <TodoFilter changeFiltered={changeFiltered} filter={filter} />
       </main>
 
-      <footer className="text-center mt-8">drag and drop to reorder </footer>
+      <footer className="text-center mt-8 dark:text-gray-400">Drag and drop to reorder </footer>
     </div>
   )
 };

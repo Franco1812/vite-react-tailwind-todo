@@ -6,7 +6,7 @@ const Header = () => {
         <div className="flex justify-between">
           <h1 className="uppercase text-white text-3xl font-semibold tracking-[0.3em]"> Todo </h1>
           <button>
-            <MoonIcon className="fill-red-500" />
+            <MoonIcon />
           </button>
         </div>
       </header>
