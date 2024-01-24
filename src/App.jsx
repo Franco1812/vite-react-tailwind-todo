@@ -62,9 +62,9 @@ const filteredTodos =() => {
 
 
   return (
-    <div className="bg-[url('./assets/images/bg-mobile-light.jpg')] bg-no-repeat bg-contain bg-gray-300 min-h-screen dark:bg-gray-900 dark:bg-[url('./assets/images/bg-mobile-dark.jpg')]">
+    <div className="bg-[url('./assets/images/bg-mobile-light.jpg')] bg-no-repeat bg-contain bg-gray-300 min-h-screen dark:bg-gray-900 dark:bg-[url('./assets/images/bg-mobile-dark.jpg')] transition-all duration-1000">
       <Header />
-      <main className="container mx-auto px-4 mt-8" >
+      <main className="container mx-auto px-4 mt-8 " >
         <TodoCreate todoCreate={todoCreate} />
 
         <TodoList todos={filteredTodos()} deleteTodo={deleteTodo} updateTodo={updateTodo} />
@@ -74,7 +74,7 @@ const filteredTodos =() => {
         <TodoFilter changeFiltered={changeFiltered} filter={filter} />
       </main>
 
-      <footer className="text-center mt-8 dark:text-gray-400">Drag and drop to reorder </footer>
+      <footer className="text-center mt-8  transition-all duration-1000 dark:text-gray-400">Drag and drop to reorder </footer>
     </div>
   )
 };
